@@ -12,7 +12,7 @@ public class DemoSpringApplication {
 		ConfigurableApplicationContext applicationContext = SpringApplication.run(DemoSpringApplication.class,
 				args);
 		
-		Calculator cal = new Calculator();
+		Calculator cal = applicationContext.getBean(Calculator.class);
 		int result = cal.mathOperation(2, 4);
 		LogManager.getLogger().info("result of opeation is: "+result);
 	}

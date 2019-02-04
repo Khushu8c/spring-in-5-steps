@@ -1,5 +1,8 @@
 package com.spring.basics;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SumCalculator implements MathOpration {
 
 	@Override
